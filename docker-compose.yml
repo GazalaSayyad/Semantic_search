@@ -1,0 +1,12 @@
+version: "3.2"
+
+services:
+  app:
+    container_name: semantic_search
+    image: serach_app
+    build:
+      context: ./src
+      dockerfile: ./Dockerfile
+    restart: always
+    ports:
+      - "5000:5000"
